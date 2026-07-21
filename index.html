@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Main homepage for ConnectSA -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectSA | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <!-- Site header and navigation -->
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="index.html" class="brand">ConnectSA</a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Hero section introducing the service directory -->
+      <section class="hero">
+        <h1>Connecting South Africans to trusted support services</h1>
+        <p>
+          ConnectSA is a community-focused directory that helps people quickly find
+          essential services such as healthcare, education, legal aid, housing, and youth support.
+        </p>
+      </section>
+
+      <!-- Search and filtering controls for the service directory -->
+      <section class="search-section" aria-label="Service search">
+        <label class="sr-only" for="serviceSearch">Search services</label>
+        <input id="serviceSearch" type="text" placeholder="Search by service or category" />
+        <select id="townFilter" aria-label="Filter by town">
+          <option value="">All towns</option>
+        </select>
+        <button id="searchButton" type="button">Search</button>
+      </section>
+
+      <!-- Service listing area populated dynamically by JavaScript -->
+      <section class="directory-section">
+        <h2>Service Directory</h2>
+        <p id="searchStatus" class="search-status">Showing all available services.</p>
+        <div class="service-grid" id="serviceGrid"></div>
+      </section>
+      <h1>More about ConnectSA</h1>
+        <p>
+            ConnectSA was founded by Ruan Hattingh and Dean Zvauya, two passionate individuals who recognized the challenges South Africans face in accessing essential services. They wanted to create a platform that simplifies the process of finding reliable support, ensuring that everyone can get the help they need without unnecessary delays or confusion.<br></br>We believe that access to essential services is a fundamental right, and our mission is to bridge the gap between those in need and the organizations that can provide assistance. By leveraging technology and community engagement, ConnectSA aims to empower individuals and strengthen communities across South Africa.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Founded by Ruan Hattingh and Dean Zvauya, ConnectSA is dedicated to helping South Africans access essential services quickly and easily.</p>
+        <p>© 2026 ConnectSA. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
